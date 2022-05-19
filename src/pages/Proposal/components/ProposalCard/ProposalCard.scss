@@ -14,4 +14,9 @@
   .proposal-id {
     color: $grey;
   }
+
+  &:hover {
+    background: $orange;
+    color: $white;
+  }
 }

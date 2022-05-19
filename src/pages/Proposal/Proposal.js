@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Header } from "../../components/Header/Header";
-import { getProposal, setValue } from "../../utils/utils";
+import { getProposal, setValue, thousandSeparator } from "../../utils/utils";
 import { PriceService } from "./../../services/price.service";
 import "./Proposal.scss";
 
@@ -47,7 +47,7 @@ export function Proposal() {
           </div>
           <div className="proposal-price">
             <div>
-              <b>Proposed price</b> {proposedPrice} SEK.
+              <b>Proposed price</b> {thousandSeparator(proposedPrice)} SEK.
             </div>
             <div>
               We save your price proposal 90 days to view the price proposal
