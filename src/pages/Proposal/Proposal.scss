@@ -1,0 +1,23 @@
+.proposal-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: block;
+
+  .proposal {
+    display: flex;
+
+    .proposal-info {
+      padding-right: 60px;
+      div {
+        padding-bottom: 10px;
+      }
+    }
+
+    .proposal-price {
+      div {
+        padding-bottom: 10px;
+      }
+    }
+  }
+}

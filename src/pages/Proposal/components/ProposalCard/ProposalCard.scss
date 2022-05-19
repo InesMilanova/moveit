@@ -1,0 +1,17 @@
+@import "../../../../colors.scss";
+
+.proposal-card {
+  border: 1px solid $black;
+  margin: 20px auto;
+  border-radius: 10px;
+  padding: 20px;
+  cursor: pointer;
+
+  .full-name {
+    font-weight: bold;
+  }
+
+  .proposal-id {
+    color: $grey;
+  }
+}

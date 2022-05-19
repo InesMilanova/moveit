@@ -1,0 +1,16 @@
+@import "../../colors";
+
+label {
+    display: flex;
+    flex-direction: inherit;
+    margin-bottom: 20px;
+    color: $grey;
+    
+    input {
+        margin: 2px 0;
+        border: 1px solid $lightGrey;
+        border-radius: 4px;
+        height: 38px;
+        padding: 0 10px;
+    }
+}

@@ -1,0 +1,54 @@
+@import '../../colors.scss';
+
+.toggleSwitch {
+  display: flex;
+
+  .switchCheckbox {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+
+  .switchLabel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 40px;
+    height: 20px;
+    background: $orange;
+    border-radius: 100px;
+    position: relative;
+    transition: background-color 0.2s;
+    transition: 0.3s;
+    left: 3px;
+
+    .switchButton {
+      content: '';
+      position: absolute;
+      top: 4px;
+      left: 3px;
+      width: 13px;
+      height: 13px;
+      border-radius: 45px;
+      transition: 0.2s;
+      background: $white;
+      box-shadow: 0 0 2px 0 $black;
+      transition: 0.3s;
+      right: 5px;
+    }
+  }
+
+  .activeGreen {
+    background: $green;
+  }
+
+  .active {
+    background: $lightGreen;
+  }
+
+  .switchCheckbox:checked + .switchLabel .switchButton {
+    left: calc(100% - 2px);
+    transform: translateX(-100%);
+  }
+}
