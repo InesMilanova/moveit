@@ -40,8 +40,7 @@ export function Proposal() {
           <div className="proposal-info">
             {proposal &&
               Object.values(proposal).map((prop) => (
-                <div>
-                  {console.log("label", prop.label)}
+                <div key={prop.label}>
                   <b>{prop.label}</b> {setValue(prop.value)}
                 </div>
               ))}
